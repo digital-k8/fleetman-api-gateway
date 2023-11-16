@@ -6,8 +6,10 @@ pipeline {
      // ORGANIZATION_NAME
      // YOUR_DOCKERHUB_USERNAME (it doesn't matter if you don't have one)
 
-     SERVICE_NAME = "fleetman-webapp"
-     REPOSITORY_TAG="collinsefe/digital-k8-${SERVICE_NAME}:${BUILD_ID}"
+      SERVICE_NAME = "fleetman-webapp"
+     ORGANIZATION_NAME="digital-k8"
+     YOUR_DOCKERHUB_USERNAME="collinsefe"
+     REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}-${SERVICE_NAME}:${BUILD_ID}"
    }
 
    stages {
