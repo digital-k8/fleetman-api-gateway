@@ -19,7 +19,7 @@ pipeline {
             git credentialsId: 'GitHub', url: "https://github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
          }
       }
-      stage('Build') {
+      stage('Installer') {
          steps {
             sh 'apt-get install maven'
          }
